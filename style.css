@@ -24,7 +24,6 @@ body {
 }
 
 .hero { padding: 72px 0 48px; }
-.hero img { display: block; margin-bottom: 28px; border-radius: 24px; }
 .eyebrow { color: var(--blue); font-size: .78rem; font-weight: 700; letter-spacing: .12em; }
 h1 { margin: 8px 0 0; font-size: clamp(2.5rem, 9vw, 5.75rem); line-height: .95; letter-spacing: -.08em; }
 h1 span { display: block; margin-top: 14px; color: var(--blue); font-size: .38em; letter-spacing: .04em; }
@@ -45,7 +44,6 @@ footer { padding: 38px 0 56px; color: var(--muted); font-size: .8rem; }
 @media (max-width: 560px) {
   .hero, main, footer { width: min(100% - 28px, 760px); }
   .hero { padding-top: 42px; }
-  .hero img { width: 96px; height: 96px; }
   section { padding: 30px 0; }
   .disclaimer { margin-inline: -14px; padding-inline: 14px; }
 }

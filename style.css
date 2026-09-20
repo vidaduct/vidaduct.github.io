@@ -39,8 +39,15 @@ p { margin: 0; }
 ul, ol { margin: 0; padding-left: 1.35rem; }
 li + li { margin-top: 10px; }
 .updates article { padding: 24px; background: var(--soft); border-left: 3px solid var(--blue); }
+.updates article + article { margin-top: 16px; }
 .update-date { color: var(--blue); font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .updates article > p + p, .updates article > p + h3 { margin-top: 12px; }
+.pool-list { margin-top: 18px; padding: 0; list-style: none; }
+.pool-list li { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 14px 0; border-top: 1px solid var(--line); }
+.pool-list strong, .pool-list code { display: block; }
+.pool-list code { margin-top: 3px; overflow-wrap: anywhere; color: var(--muted); font-size: .72rem; }
+.pool-list a { flex: none; color: var(--blue); font-size: .8rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+.pool-list a:hover, .pool-list a:focus-visible { text-decoration: underline; }
 .contract { padding: 14px 0; }
 .contract span { display: block; margin-bottom: 4px; color: var(--muted); font-size: .78rem; text-transform: uppercase; }
 .contract code { overflow-wrap: anywhere; color: var(--ink); font-size: .88rem; }
@@ -53,6 +60,8 @@ footer { padding: 38px 0 56px; color: var(--muted); font-size: .8rem; }
 @media (max-width: 560px) {
   .hero, main, footer { width: min(100% - 28px, 760px); }
   .hero { padding-top: 42px; }
+  .pool-list li { display: block; }
+  .pool-list a { display: inline-block; margin-top: 8px; }
   section { padding: 30px 0; }
   .disclaimer { margin-inline: -14px; padding-inline: 14px; }
 }

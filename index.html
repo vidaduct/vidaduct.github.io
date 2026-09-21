@@ -17,44 +17,58 @@
   </header>
 
   <main>
-    <section class="updates">
-      <h2>Project updates</h2>
+    <section class="pool-registry">
+      <div class="section-heading">
+        <h2>Active pool registry</h2>
+        <p>Canonical list of disclosed VIDADUCT liquidity pools. Addresses were checked against live market metadata on September 21, 2026.</p>
+      </div>
+      <div class="pool-table-wrap">
+        <table class="pool-table">
+          <thead>
+            <tr><th>Pair</th><th>Venue / type</th><th>Pool address</th><th>Status</th><th></th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>DUCT / SOL</strong></td><td>Meteora DAMM v2</td><td><code>27TZt6d6JGGjKj1HWyya7cYATnYkf1qP26WUge77NsN5</code></td><td><span class="status active">Active</span></td><td><a href="https://app.meteora.ag/dammv2/27TZt6d6JGGjKj1HWyya7cYATnYkf1qP26WUge77NsN5?referrer=portfolio" target="_blank" rel="noopener noreferrer">Open ↗</a></td></tr>
+            <tr><td><strong>DUCT / ALICE</strong></td><td>Meteora DAMM v2</td><td><code>DwsMNwbbZSQoRtUZHvNC16YT5uhysEUBBerfFUVhqwzh</code></td><td><span class="status active">Active</span></td><td><a href="https://app.meteora.ag/dammv2/DwsMNwbbZSQoRtUZHvNC16YT5uhysEUBBerfFUVhqwzh?referrer=portfolio" target="_blank" rel="noopener noreferrer">Open ↗</a></td></tr>
+            <tr><td><strong>DUCT / STONK</strong></td><td>Raydium CLMM · full range</td><td><code>DSbQi3uVLARPC5EmhUxjGJzBstnhfkBbETwePjbPpym9</code></td><td><span class="status active">Active</span></td><td><a href="https://raydium.io/liquidity/increase/?mode=add&amp;pool_id=DSbQi3uVLARPC5EmhUxjGJzBstnhfkBbETwePjbPpym9" target="_blank" rel="noopener noreferrer">Open ↗</a></td></tr>
+            <tr><td><strong>DUCT / VIDA</strong><small>On-chain symbol: VIDAx</small></td><td>Raydium CLMM · full range</td><td><code>4pz952Zb4VyXvaya1qDLD97x3ZmKdjT5XSnBrBrZY7im</code></td><td><span class="status active">Active</span></td><td><a href="https://raydium.io/liquidity/increase/?mode=add&amp;pool_id=4pz952Zb4VyXvaya1qDLD97x3ZmKdjT5XSnBrBrZY7im" target="_blank" rel="noopener noreferrer">Open ↗</a></td></tr>
+            <tr><td><strong>DUCT / xSOL</strong></td><td>Raydium CLMM · full range</td><td><code>ahfcZ8kB6C4VKkAfmBV9X7tmEYL7zqfj4oHheP6PEdi</code></td><td><span class="status active">Active</span></td><td><a href="https://raydium.io/liquidity/increase/?mode=add&amp;pool_id=ahfcZ8kB6C4VKkAfmBV9X7tmEYL7zqfj4oHheP6PEdi" target="_blank" rel="noopener noreferrer">Open ↗</a></td></tr>
+            <tr><td><strong>DUCT / ALICE</strong></td><td>Raydium CLMM · full range</td><td><code>3XZuUWL8sQD4E6YaYw5ittDY2uWa4HqB79viE2yoUNLR</code></td><td><span class="status active">Active</span></td><td><a href="https://raydium.io/liquidity/increase/?mode=add&amp;pool_id=3XZuUWL8sQD4E6YaYw5ittDY2uWa4HqB79viE2yoUNLR" target="_blank" rel="noopener noreferrer">Open ↗</a></td></tr>
+            <tr><td><strong>DUCT / RAY</strong></td><td>Raydium CLMM · full range</td><td><code>67M9k3Qbpqs9SPtH8gLnZnpdjvRxMHHrohT5xiFZnRpm</code></td><td><span class="status active">Active</span></td><td><a href="https://raydium.io/liquidity/increase/?mode=add&amp;pool_id=67M9k3Qbpqs9SPtH8gLnZnpdjvRxMHHrohT5xiFZnRpm" target="_blank" rel="noopener noreferrer">Open ↗</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <details class="retired-pools">
+        <summary>Retired pools</summary>
+        <div><strong>DUCT / USDC · Meteora DAMM v2</strong><code>PXhcMeBvZeDMZM1vDQBbsuaUyVofCwvVu5e9XWqeWL6</code><span>Liquidity removed September 21, 2026</span></div>
+      </details>
+    </section>
+
+    <section class="updates" id="journal">
+      <div class="section-heading">
+        <h2>Liquidity journal</h2>
+        <p>A dated record of pool launches, removals, allocations, and stated reinvestment plans.</p>
+      </div>
       <article>
-        <p class="update-date"><time datetime="2026-09-20">September 20, 2026</time></p>
-        <h3>Raydium CLMM test added</h3>
-        <p>A small experimental DUCT/xSOL concentrated-liquidity position is live on Raydium.</p>
-        <ul class="pool-list">
-          <li>
-            <div><strong>DUCT / xSOL</strong><code>ahfcZ8kB6C4VKkAfmBV9X7tmEYL7zqfj4oHheP6PEdi</code></div>
-            <a href="https://raydium.io/liquidity/increase/?mode=add&amp;pool_id=ahfcZ8kB6C4VKkAfmBV9X7tmEYL7zqfj4oHheP6PEdi" target="_blank" rel="noopener noreferrer">Open pool ↗</a>
-          </li>
+        <p class="update-date"><time datetime="2026-09-21">September 21, 2026</time></p>
+        <h3>Raydium roster expanded; USDC pool retired</h3>
+        <ul class="journal-list">
+          <li>Expanded the Raydium roster to five disclosed full-range CLMM pools: DUCT/STONK, DUCT/VIDA, DUCT/xSOL, DUCT/ALICE, and DUCT/RAY.</li>
+          <li>Removed liquidity from the Meteora DUCT/USDC pool and moved it to the retired registry.</li>
+          <li>Added 70 SOL one-sided to the VIDA/SOL LP.</li>
+          <li><strong>Stated next use:</strong> pair earned VIDA rewards with additional DUCT liquidity. This remains a plan until a corresponding transaction or position is published.</li>
         </ul>
       </article>
       <article>
         <p class="update-date"><time datetime="2026-09-20">September 20, 2026</time></p>
-        <h3>Three Meteora pools are live</h3>
-        <p>Initial DAMM v2 liquidity is now active across DUCT/ALICE, DUCT/SOL, and DUCT/USDC.</p>
-        <ul class="pool-list">
-          <li>
-            <div><strong>DUCT / ALICE</strong><code>DwsMNwbbZSQoRtUZHvNC16YT5uhysEUBBerfFUVhqwzh</code></div>
-            <a href="https://app.meteora.ag/dammv2/DwsMNwbbZSQoRtUZHvNC16YT5uhysEUBBerfFUVhqwzh" target="_blank" rel="noopener noreferrer">Open pool ↗</a>
-          </li>
-          <li>
-            <div><strong>DUCT / SOL</strong><code>27TZt6d6JGGjKj1HWyya7cYATnYkf1qP26WUge77NsN5</code></div>
-            <a href="https://app.meteora.ag/dammv2/27TZt6d6JGGjKj1HWyya7cYATnYkf1qP26WUge77NsN5" target="_blank" rel="noopener noreferrer">Open pool ↗</a>
-          </li>
-          <li>
-            <div><strong>DUCT / USDC</strong><code>PXhcMeBvZeDMZM1vDQBbsuaUyVofCwvVu5e9XWqeWL6</code></div>
-            <a href="https://app.meteora.ag/dammv2/PXhcMeBvZeDMZM1vDQBbsuaUyVofCwvVu5e9XWqeWL6" target="_blank" rel="noopener noreferrer">Open pool ↗</a>
-          </li>
-        </ul>
+        <h3>Initial liquidity network published</h3>
+        <p>Published the first Meteora DAMM v2 pools and the experimental Raydium DUCT/xSOL CLMM position.</p>
       </article>
       <article>
         <p class="update-date"><time datetime="2026-09-20">September 20, 2026</time></p>
-        <h3>$DUCT is live</h3>
-        <p>The VIDADUCT token is now live on StonkFun.</p>
+        <h3>$DUCT launched</h3>
+        <p>The VIDADUCT token went live on StonkFun.</p>
         <p class="contract"><span>Token address</span><code>9xj83JeyTrUgXA1pZPr5vbtUiNSjfBuktkGD4yXReeQf</code></p>
-        <p>This page will carry future liquidity additions, LP-lock status, reinvestment transactions, metrics, and rule changes.</p>
       </article>
     </section>
 

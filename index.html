@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="VIDADUCT ($DUCT) is an independent Solana liquidity experiment around VIDAx.">
   <title>VIDADUCT — All pools flow through the Duct.</title>
-  <link rel="stylesheet" href="./style.css?v=2c53e77">
+  <link rel="stylesheet" href="./style.css?v=20260921-1">
 </head>
 <body>
   <header class="hero">
@@ -22,19 +22,24 @@
         <h2>Active pool registry</h2>
         <p>Canonical list of disclosed VIDADUCT liquidity pools. Addresses were checked against live market metadata on September 21, 2026.</p>
       </div>
+      <div class="metrics-summary" aria-live="polite">
+        <div><span>Total active TVL</span><strong id="total-tvl">Loading…</strong></div>
+        <div><span>Combined 24h volume</span><strong id="total-volume">Loading…</strong></div>
+        <p id="metrics-updated">Fetching live pool data…</p>
+      </div>
       <div class="pool-table-wrap">
         <table class="pool-table">
           <thead>
-            <tr><th>Pair</th><th>Venue / type</th><th>Pool address</th><th>Status</th><th></th></tr>
+            <tr><th>Pair</th><th>Venue / type</th><th>Pool address</th><th>TVL</th><th>24h volume</th><th>Status</th><th></th></tr>
           </thead>
           <tbody>
-            <tr><td><strong>DUCT / SOL</strong></td><td>Meteora DAMM v2</td><td><code>27TZt6d6JGGjKj1HWyya7cYATnYkf1qP26WUge77NsN5</code></td><td><span class="status active">Active</span></td><td><a href="https://app.meteora.ag/dammv2/27TZt6d6JGGjKj1HWyya7cYATnYkf1qP26WUge77NsN5?referrer=portfolio" target="_blank" rel="noopener noreferrer">Open ↗</a></td></tr>
-            <tr><td><strong>DUCT / ALICE</strong></td><td>Meteora DAMM v2</td><td><code>DwsMNwbbZSQoRtUZHvNC16YT5uhysEUBBerfFUVhqwzh</code></td><td><span class="status active">Active</span></td><td><a href="https://app.meteora.ag/dammv2/DwsMNwbbZSQoRtUZHvNC16YT5uhysEUBBerfFUVhqwzh?referrer=portfolio" target="_blank" rel="noopener noreferrer">Open ↗</a></td></tr>
-            <tr><td><strong>DUCT / STONK</strong></td><td>Raydium CLMM · full range</td><td><code>DSbQi3uVLARPC5EmhUxjGJzBstnhfkBbETwePjbPpym9</code></td><td><span class="status active">Active</span></td><td><a href="https://raydium.io/liquidity/increase/?mode=add&amp;pool_id=DSbQi3uVLARPC5EmhUxjGJzBstnhfkBbETwePjbPpym9" target="_blank" rel="noopener noreferrer">Open ↗</a></td></tr>
-            <tr><td><strong>DUCT / VIDA</strong><small>On-chain symbol: VIDAx</small></td><td>Raydium CLMM · full range</td><td><code>4pz952Zb4VyXvaya1qDLD97x3ZmKdjT5XSnBrBrZY7im</code></td><td><span class="status active">Active</span></td><td><a href="https://raydium.io/liquidity/increase/?mode=add&amp;pool_id=4pz952Zb4VyXvaya1qDLD97x3ZmKdjT5XSnBrBrZY7im" target="_blank" rel="noopener noreferrer">Open ↗</a></td></tr>
-            <tr><td><strong>DUCT / xSOL</strong></td><td>Raydium CLMM · full range</td><td><code>ahfcZ8kB6C4VKkAfmBV9X7tmEYL7zqfj4oHheP6PEdi</code></td><td><span class="status active">Active</span></td><td><a href="https://raydium.io/liquidity/increase/?mode=add&amp;pool_id=ahfcZ8kB6C4VKkAfmBV9X7tmEYL7zqfj4oHheP6PEdi" target="_blank" rel="noopener noreferrer">Open ↗</a></td></tr>
-            <tr><td><strong>DUCT / ALICE</strong></td><td>Raydium CLMM · full range</td><td><code>3XZuUWL8sQD4E6YaYw5ittDY2uWa4HqB79viE2yoUNLR</code></td><td><span class="status active">Active</span></td><td><a href="https://raydium.io/liquidity/increase/?mode=add&amp;pool_id=3XZuUWL8sQD4E6YaYw5ittDY2uWa4HqB79viE2yoUNLR" target="_blank" rel="noopener noreferrer">Open ↗</a></td></tr>
-            <tr><td><strong>DUCT / RAY</strong></td><td>Raydium CLMM · full range</td><td><code>67M9k3Qbpqs9SPtH8gLnZnpdjvRxMHHrohT5xiFZnRpm</code></td><td><span class="status active">Active</span></td><td><a href="https://raydium.io/liquidity/increase/?mode=add&amp;pool_id=67M9k3Qbpqs9SPtH8gLnZnpdjvRxMHHrohT5xiFZnRpm" target="_blank" rel="noopener noreferrer">Open ↗</a></td></tr>
+            <tr data-pool="27TZt6d6JGGjKj1HWyya7cYATnYkf1qP26WUge77NsN5" data-venue="meteora"><td><strong>DUCT / SOL</strong></td><td>Meteora DAMM v2</td><td><code>27TZt6d6JGGjKj1HWyya7cYATnYkf1qP26WUge77NsN5</code></td><td class="metric tvl">—</td><td class="metric volume">—</td><td><span class="status active">Active</span></td><td><a href="https://app.meteora.ag/dammv2/27TZt6d6JGGjKj1HWyya7cYATnYkf1qP26WUge77NsN5?referrer=portfolio" target="_blank" rel="noopener noreferrer">Open ↗</a></td></tr>
+            <tr data-pool="DwsMNwbbZSQoRtUZHvNC16YT5uhysEUBBerfFUVhqwzh" data-venue="meteora"><td><strong>DUCT / ALICE</strong></td><td>Meteora DAMM v2</td><td><code>DwsMNwbbZSQoRtUZHvNC16YT5uhysEUBBerfFUVhqwzh</code></td><td class="metric tvl">—</td><td class="metric volume">—</td><td><span class="status active">Active</span></td><td><a href="https://app.meteora.ag/dammv2/DwsMNwbbZSQoRtUZHvNC16YT5uhysEUBBerfFUVhqwzh?referrer=portfolio" target="_blank" rel="noopener noreferrer">Open ↗</a></td></tr>
+            <tr data-pool="DSbQi3uVLARPC5EmhUxjGJzBstnhfkBbETwePjbPpym9"><td><strong>DUCT / STONK</strong></td><td>Raydium CLMM · full range</td><td><code>DSbQi3uVLARPC5EmhUxjGJzBstnhfkBbETwePjbPpym9</code></td><td class="metric tvl">—</td><td class="metric volume">—</td><td><span class="status active">Active</span></td><td><a href="https://raydium.io/liquidity/increase/?mode=add&amp;pool_id=DSbQi3uVLARPC5EmhUxjGJzBstnhfkBbETwePjbPpym9" target="_blank" rel="noopener noreferrer">Open ↗</a></td></tr>
+            <tr data-pool="4pz952Zb4VyXvaya1qDLD97x3ZmKdjT5XSnBrBrZY7im"><td><strong>DUCT / VIDA</strong><small>On-chain symbol: VIDAx</small></td><td>Raydium CLMM · full range</td><td><code>4pz952Zb4VyXvaya1qDLD97x3ZmKdjT5XSnBrBrZY7im</code></td><td class="metric tvl">—</td><td class="metric volume">—</td><td><span class="status active">Active</span></td><td><a href="https://raydium.io/liquidity/increase/?mode=add&amp;pool_id=4pz952Zb4VyXvaya1qDLD97x3ZmKdjT5XSnBrBrZY7im" target="_blank" rel="noopener noreferrer">Open ↗</a></td></tr>
+            <tr data-pool="ahfcZ8kB6C4VKkAfmBV9X7tmEYL7zqfj4oHheP6PEdi"><td><strong>DUCT / xSOL</strong></td><td>Raydium CLMM · full range</td><td><code>ahfcZ8kB6C4VKkAfmBV9X7tmEYL7zqfj4oHheP6PEdi</code></td><td class="metric tvl">—</td><td class="metric volume">—</td><td><span class="status active">Active</span></td><td><a href="https://raydium.io/liquidity/increase/?mode=add&amp;pool_id=ahfcZ8kB6C4VKkAfmBV9X7tmEYL7zqfj4oHheP6PEdi" target="_blank" rel="noopener noreferrer">Open ↗</a></td></tr>
+            <tr data-pool="3XZuUWL8sQD4E6YaYw5ittDY2uWa4HqB79viE2yoUNLR"><td><strong>DUCT / ALICE</strong></td><td>Raydium CLMM · full range</td><td><code>3XZuUWL8sQD4E6YaYw5ittDY2uWa4HqB79viE2yoUNLR</code></td><td class="metric tvl">—</td><td class="metric volume">—</td><td><span class="status active">Active</span></td><td><a href="https://raydium.io/liquidity/increase/?mode=add&amp;pool_id=3XZuUWL8sQD4E6YaYw5ittDY2uWa4HqB79viE2yoUNLR" target="_blank" rel="noopener noreferrer">Open ↗</a></td></tr>
+            <tr data-pool="67M9k3Qbpqs9SPtH8gLnZnpdjvRxMHHrohT5xiFZnRpm"><td><strong>DUCT / RAY</strong></td><td>Raydium CLMM · full range</td><td><code>67M9k3Qbpqs9SPtH8gLnZnpdjvRxMHHrohT5xiFZnRpm</code></td><td class="metric tvl">—</td><td class="metric volume">—</td><td><span class="status active">Active</span></td><td><a href="https://raydium.io/liquidity/increase/?mode=add&amp;pool_id=67M9k3Qbpqs9SPtH8gLnZnpdjvRxMHHrohT5xiFZnRpm" target="_blank" rel="noopener noreferrer">Open ↗</a></td></tr>
           </tbody>
         </table>
       </div>
@@ -126,5 +131,6 @@
   <footer>
     <p>VIDADUCT · $DUCT · Independent and experimental.</p>
   </footer>
+  <script src="./script.js?v=20260921-1" defer></script>
 </body>
 </html>
